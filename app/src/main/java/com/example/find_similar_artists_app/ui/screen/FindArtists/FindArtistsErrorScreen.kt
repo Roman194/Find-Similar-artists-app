@@ -2,6 +2,7 @@ package com.example.find_similar_artists_app.ui.screen.FindArtists
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -34,7 +35,6 @@ fun FindArtistsError(
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxWidth()
-                .height(50.dp)
         ){
             Text(
                 text = errorMessage,

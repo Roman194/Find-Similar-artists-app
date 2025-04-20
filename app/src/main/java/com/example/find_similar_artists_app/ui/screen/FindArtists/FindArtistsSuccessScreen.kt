@@ -46,7 +46,7 @@ fun FindArtistsSuccess(
         LazyColumn(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(start = 16.dp, bottom = 16.dp, end = 16.dp),
+                .padding(start = 16.dp, bottom = 64.dp, end = 16.dp),
         ){
             itemsIndexed(artistValues) { index,artist -> //this construction optimize creation of similar reviews elements
 

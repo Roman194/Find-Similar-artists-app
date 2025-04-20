@@ -40,7 +40,7 @@ fun ArtistTextField(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Find Similar Artists",
+            text = "Similar artists finder",
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(top = 32.dp, bottom = 16.dp),
             color = Color.Black,
