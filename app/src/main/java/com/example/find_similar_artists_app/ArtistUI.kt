@@ -1,0 +1,5 @@
+package com.example.find_similar_artists_app
+
+data class ArtistUI(
+    val name: String = "artist",
+)
