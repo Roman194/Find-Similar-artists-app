@@ -1,4 +1,6 @@
-package com.example.find_similar_artists_app
+package com.example.find_similar_artists_app.assets
+
+import com.example.find_similar_artists_app.models.ArtistUI
 
 object SampleData {
     val sampleArtists = listOf(
