@@ -1,20 +1,16 @@
 package com.example.find_similar_artists_app.data
 
 import com.example.find_similar_artists_app.BuildConfig
+import com.example.find_similar_artists_app.data.Either.EitherCallAdapterFactory
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
 
-class ParseConstants{
-    companion object{
-        const val API_KEY = BuildConfig.TASTE_DIVE_API_KEY
-    }
+
+object ClientBuilder {
+
 }
-
-val loggingInterceptor = HttpLoggingInterceptor()
-    .apply {
-        setLevel(HttpLoggingInterceptor.Level.BASIC)
-    }
-
-val client = OkHttpClient.Builder()
-    .addNetworkInterceptor(loggingInterceptor)
-    .build()

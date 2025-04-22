@@ -14,10 +14,10 @@ data class ErrorResponse(
 
 fun ErrorResponse.toStringType()=
     when(errorNumber){
-        404 -> "404: Artist not found."
-        409 -> "409: Invalid or unrecognized parameter."
-        700 -> "700: Network error."
-        in 400..499 -> "4XX: Unknown client error."
-        in 500..599 -> "5XX: Unknown server error."
-        else -> "Unknown error."
+        404 -> "{$errorNumber}: Artist not found."
+        409 -> "{$errorNumber}: Invalid or unrecognized parameter."
+        700 -> "{$errorNumber}: Network error."
+        in 400..499 -> "{$errorNumber}: Client error."
+        in 500..599 -> "{$errorNumber}: Server error."
+        else -> "{$errorNumber}: Unknown error."
     } + errorMessage + errorCause
