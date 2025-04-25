@@ -12,8 +12,9 @@ The find similar artists app uses such technoligies as:
 - Working with the [tastedive API](https://tastedive.com/read/api)
 
 ## Video
-Here you can see the video of the working of this app:
-https://github.com/user-attachments/assets/a5c662ae-8cbb-4de6-850e-15f64aee04db
+Here you can see the video of the working of this app: </br>
+
+https://github.com/user-attachments/assets/47f03e4c-2fbd-4397-ac36-67680784d74b
 
 ## How to run
 
